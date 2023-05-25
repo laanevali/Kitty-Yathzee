@@ -39,17 +39,18 @@
   font-family: var(--font-mono);
 }
 
-.ylemine {grid-area: header; position:static;}
-.vasak {grid-area: left; position:static;}
-.parem {grid-area: right; position:static;}
+
+.vasak {grid-area: left; position:sticky;}
+.parem {grid-area: right; position:sticky;}
+.keskel {grid-area: center; position:absolute;}
 
 .gridContainer {
-  display:contents;
+  display:grid;
   grid-template-areas:
-  'header header'
-  'left right'
-  'left right';
-  width: var(--max-width);
+  'header  header'
+  'right  left'
+  'center  center';
+  width: 1280px;
   max-width: 100%;
 }
 

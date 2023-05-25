@@ -1,5 +1,17 @@
-import '@/styles/globals.css'
+import '../styles/globals.css'
+import Layout from '../components/Layout'
+import React from 'react';
+import Home from '.';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+function MyApp() {
+  return (
+    <Layout>
+    <div>
+      <Home />
+    </div>
+    </Layout>
+  )
 }
+  
+export default MyApp
